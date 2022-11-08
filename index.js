@@ -40,8 +40,8 @@ const storage = multer.diskStorage({
   });
 
 app.use(express.json())
-app.use('/api/users',userRouter)
-app.use('/api/auth',authRoute)
-app.use('/api/posts',postRoute)
+app.use('/api/users',userRouter);
+app.use('/api/auth',authRoute);
+app.use('/api/posts',postRoute);
 app.use("/api/conversations", conversationRoute);
 app.use("/api/messages", messageRoute);
