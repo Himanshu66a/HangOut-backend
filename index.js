@@ -9,6 +9,11 @@ const conversationRoute = require("./routes/conversations");
 const messageRoute = require("./routes/messages");
 const multer = require("multer");
 const path = require("path");
+const cors = require('cors');
+
+app.use(cors({
+  origin: 'https://hangout.onrender.com'
+}));
 
 dotenv.config()
 
