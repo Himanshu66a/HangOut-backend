@@ -12,7 +12,7 @@ const path = require("path");
 const cors = require('cors');
 
 app.use(cors({
-  origin: 'https://hangout.onrender.com'
+  origin: 'https://hangout-client.onrender.com'
 }));
 
 dotenv.config()
